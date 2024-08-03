@@ -1,0 +1,9 @@
+<section class="products-list">
+    <app-produto-card *ngFor="let produto of produtos"
+    [productID]="produto.id"
+    [productImage]="produto.imagem"
+    [productName]="produto.descricao"
+    [productPrice]="produto.preco"
+    [productDesc]="produto.des"
+    ></app-produto-card>
+</section>

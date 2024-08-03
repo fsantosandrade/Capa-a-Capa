@@ -1,0 +1,8 @@
+<div class="container">
+    <a routerLink="/produtos/{{ productID }}">
+        <img [src]="productImage" [alt]="productName">
+        <h2 class="product-name">{{ productName }}</h2>
+        <span class="product-price">{{ productPrice | currency: "BRL" }}</span>
+        <p class="product-description">{{ productDesc }}</p>
+    </a>
+</div>

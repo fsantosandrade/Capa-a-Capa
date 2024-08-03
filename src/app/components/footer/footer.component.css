@@ -1,0 +1,50 @@
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--secondary-bg-color);
+    border-top: 1px solid var(--secondary-bg-color);
+}
+
+.container > .content__container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container > .content__container > .sobre {
+    width: 40%;
+}
+
+.container > .content__container > .sobre > h2,
+.container > .content__container > .contato > h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.container > .content__container > .sobre > p {
+    text-align: justify;
+    text-indent: 10px;
+}
+
+.container > .content__container > .contato {
+    width: 30%;
+}
+
+.container > .content__container > .contato > ul > li > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+.container > .content__container > .contato > ul > li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container > .copyright {
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+}
