@@ -1,7 +1,7 @@
 form {
-    width: 100%;
+    width: 235px;
     display: flex;
-    justify-content: stretch;
+    justify-content: flex-end;
 }
 
 form > input {
@@ -10,12 +10,12 @@ form > input {
     border-radius: 5px 0 0 5px;
     padding: 2px;
     width: 85%;
-    height: 25px;
+    height: 30px;
     transition: .01s ease;
 }
 
 form > button {
-    height: 25px;
+    height: 30px;
     padding: 0 6px;
     background-color: var(--primary-color);
     border-radius: 0 5px 5px 0;
