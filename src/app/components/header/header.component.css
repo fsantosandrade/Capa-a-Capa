@@ -48,35 +48,3 @@
     padding: 0 4px;
     border-radius: 50%;
 }
-
-.container > .menu__container > form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.container > .menu__container > form > input {
-    border: 1px solid rgb(197, 197, 197);
-    background-color: rgb(228, 228, 228);
-    border-radius: 5px 0 0 5px;
-    padding: 2px;
-    width: 85%;
-    height: 25px;
-    transition: .01s ease;
-}
-
-.container > .menu__container > form > button {
-    height: 100%;
-    padding: 0 6px;
-    background-color: var(--primary-color);
-    border-radius: 0 5px 5px 0;
-}
-
-.container > .menu__container > form > button > i {
-    color: white;
-}
-
-.container > .menu__container > form > input:focus {
-    border: 2px solid var(--primary-color);
-    background-color: white;
-}

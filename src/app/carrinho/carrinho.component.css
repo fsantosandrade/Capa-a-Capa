@@ -87,3 +87,29 @@
     background-color: white;
     color: var(--primary-color);
 }
+
+.carrinho-vazio {
+    display: block;
+    margin: auto;
+}
+
+img.carrinho-vazio {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+p.carrinho-vazio {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.link-vazio {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.link-vazio:hover {
+    text-decoration: underline;
+}

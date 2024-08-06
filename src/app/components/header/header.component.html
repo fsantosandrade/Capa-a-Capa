@@ -14,13 +14,10 @@
                     <span class="badge-carrinho">{{ carrinho.obterCarrinho().length }}</span>
                 </li>
                 <li>
-                    <a href="#contato">Contatos</a>
+                    <a routerLink="contato">Contatos</a>
                 </li>
             </ul>
         </nav>
-        <form action="">
-          <input type="text">
-          <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+        <app-barra-pesquisa></app-barra-pesquisa>
     </div>
 </header>

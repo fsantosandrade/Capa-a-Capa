@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 173px 0;
+    font-size: 3rem;
+    gap: 20px;
+    color: grey;
+}
+
+.container > i {
+    color: rgb(87, 87, 87);
+}

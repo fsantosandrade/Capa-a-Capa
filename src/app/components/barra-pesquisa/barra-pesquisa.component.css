@@ -1,0 +1,31 @@
+form {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+}
+
+form > input {
+    border: 1px solid rgb(197, 197, 197);
+    background-color: rgb(228, 228, 228);
+    border-radius: 5px 0 0 5px;
+    padding: 2px;
+    width: 85%;
+    height: 25px;
+    transition: .01s ease;
+}
+
+form > button {
+    height: 25px;
+    padding: 0 6px;
+    background-color: var(--primary-color);
+    border-radius: 0 5px 5px 0;
+}
+
+form > button > i {
+    color: white;
+}
+
+form > input:focus {
+    border: 2px solid var(--primary-color);
+    background-color: white;
+}
