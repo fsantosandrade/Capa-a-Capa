@@ -10,8 +10,8 @@
                 </li>
                 <li class="carrinho">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="">Carrinho</a>
-                    <span class="badge-carrinho">{{ qtdCarrinho }}</span>
+                    <a routerLink="carrinho">Carrinho</a>
+                    <span class="badge-carrinho">{{ carrinho.obterCarrinho().length }}</span>
                 </li>
                 <li>
                     <a href="#contato">Contatos</a>

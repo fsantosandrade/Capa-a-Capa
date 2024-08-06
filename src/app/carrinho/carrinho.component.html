@@ -1,0 +1,29 @@
+<section class="container">
+    <h2 class="title">Carrinho</h2>
+    <div class="carrinho" *ngIf="itensCarrinho.length > 0 else semProduto">
+        <ul>
+            <li *ngFor="let item of itensCarrinho">
+                <div class="product">
+                    <div class="image"><img [src]="item.imagem" [alt]="item.descricao"></div>
+                    <div class="infos-prod">
+                        <span class="name">{{ item.descricao }}</span>
+                        <span class="price">
+                            {{ item.preco | currency: "BRL"}}
+                        </span>
+                        <label>
+                            Quantidade:
+                            <input type="number" name="qtd" [(ngModel)]="item.quantidade" (change)="obterTotal()" min="1">
+                        </label>
+                    </div>
+                </div>
+                <button type="button" (click)="removeItem(item.id)"><i class="fa-solid fa-x"></i></button>
+            </li>
+        </ul>
+        <h2 class="total-carrinho">Total: {{ obterTotal() }}</h2>
+        <button type="button" (click)="comprar()">Comprar</button>
+    </div>
+</section>
+
+<ng-template #semProduto>
+    <p>Nenhum item no seu carrinho ainda!</p>
+</ng-template>

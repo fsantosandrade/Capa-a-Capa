@@ -13,7 +13,7 @@
         </form>
 
         <span class="estoque">{{ produto?.quantidadeEstoque }} unidade(s) em estoque</span>
-        <button type="button">Adicionar ao carrinho</button>
+        <button type="button" (click)="adicionarAoCarrinho()">Adicionar ao carrinho</button>
 
         <p class="description">{{ produto?.des }}</p>
     </section>

@@ -7,6 +7,10 @@ export interface IProduto {
     quantidadeEstoque: number;
 }
 
+export interface IProdutoCarrinho extends IProduto {
+    quantidade: number
+}
+
 export const produtos: IProduto[] = [
     {
         id: 1, descricao: "Biblioteca da Meia-Noite", preco: 37.74, des: "", imagem: "https://m.media-amazon.com/images/I/51kAYMwbQIL._SR480,440_.jpg",

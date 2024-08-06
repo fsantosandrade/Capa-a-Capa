@@ -16,4 +16,10 @@ export class ProdutosService {
   getOne(produtoId: number) {
     return this.produtos.find(produto => produto.id == produtoId)
   }
+
+  getSearch(produto: string) {
+    this.produtos.forEach(p => {
+      
+    })
+  }
 }
