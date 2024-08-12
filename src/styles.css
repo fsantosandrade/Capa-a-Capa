@@ -1,16 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
 @font-face {
-    font-family: 'Feelin';
-    src: url(assets/fonts/Feelin_Sweet.otf);
+    font-family: 'Really';
+    src: url(assets/fonts/Really.ttf);
 }
 
 :root {
-    --primary-color: #232601;
-    --secondary-color: #323909;
+    --primary-color: rgb(51, 84, 145);
+    --secondary-color: rgb(27, 53, 102);
 
-    --primary-bg-color: rgb(80, 89, 70);
-    --secondary-bg-color: rgba(157, 162, 152, 0.353);
+    --primary-bg-color: rgb(131, 34, 34);
+    --secondary-bg-color: rgba(131, 34, 34, 0.082);
+
+    --border-color: rgba(131, 34, 34, 0.562);
 }
 
 * {
@@ -23,8 +25,8 @@
 }
 
 h1, h2, h3 {
-    font-family: 'Feelin', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--secondary-color);
+    font-family: 'Really', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary-color);
 }
 
 i {

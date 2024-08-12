@@ -1,9 +1,21 @@
 .container {
-    padding: 15px;
+    padding: 25px;
+    margin-top: 110px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.container > h2 {
-    font-size: 1.8rem;
+.container > .image-bg > img {
+    width: 500px;
+}
+
+.container > .contact-container > h2 {
+    font-size: 2.5rem;
+    font-family: Really;
+    font-weight: 800;
 }
 
 .container > .contact-container > .form-contact {
@@ -15,7 +27,7 @@
 .container > .contact-container > .form-contact > input {
     border: 1px solid var(--primary-color);
     padding: 10px;
-    max-width: 600px;
+    width: 600px;
 }
 
 .container > .contact-container > .form-contact > input.valid {

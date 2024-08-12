@@ -1,6 +1,6 @@
 <div class="container">
-    <h2>Entre em Contato</h2>
     <section class="contact-container">
+        <h2>Entre em Contato</h2>
         <form class="form-contact" [formGroup]="formContato" (ngSubmit)="enviarFormulario()">
             <input 
                 type="text" 
@@ -94,5 +94,8 @@
 
             <button type="submit" [disabled]="formContato.invalid">Enviar</button>
         </form>
+    </section>
+    <section class="image-bg">
+        <img src="assets/images/image-contact.png" alt="">
     </section>
 </div>

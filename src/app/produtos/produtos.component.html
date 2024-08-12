@@ -1,10 +1,21 @@
-<section class="products-list">
-    <app-produto-card *ngFor="let produto of produtos"
-    [productID]="produto.id"
-    [productImage]="produto.imagem"
-    [productName]="produto.descricao"
-    [productPrice]="produto.preco"
-    [productDesc]="produto.des"
-    class="product-card"
-    ></app-produto-card>
-</section>
+<body>
+    <section class="banner">
+        <div class="title">
+            <h1 class="title1">Descubra mundos,</h1>
+            <h1 class="title2">Capa-a-Capa</h1>
+        </div>
+        <div class="image">
+            <img src="assets/images/image-banner.png" alt="Capa-a-Capa">
+        </div>
+    </section>
+    <section class="products-list">
+        <app-produto-card *ngFor="let produto of produtos"
+        [productID]="produto.id"
+        [productImage]="produto.imagem"
+        [productName]="produto.descricao"
+        [productPrice]="produto.preco"
+        [productDesc]="produto.des"
+        class="product-card"
+        ></app-produto-card>
+    </section>
+</body>

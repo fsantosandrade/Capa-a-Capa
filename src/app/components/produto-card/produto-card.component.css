@@ -1,7 +1,8 @@
 .container {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 200px;
+    max-width: 200px;
 }
 
 .container > a {
@@ -44,6 +45,7 @@
 .container > a > .product-price {
     font-weight: 600;
     font-size: 1.1rem;
+    color: var(--secondary-color);
 }
 
 .container > a > .product-description {

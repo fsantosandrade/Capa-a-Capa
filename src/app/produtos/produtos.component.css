@@ -1,3 +1,42 @@
+body {
+    background-color: white;
+    margin-top: 105px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 30px;
+    gap: 100px;
+    background-color: var(--secondary-bg-color);
+}
+
+.banner > .title {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.banner > .title > .title1 {
+    font-size: 1.5rem;
+    color: var(--primary-bg-color);
+}
+
+.banner > .title > .title2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-family: 'Really', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner > .image > img {
+    max-width: 500px;
+}
+
 .products-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
