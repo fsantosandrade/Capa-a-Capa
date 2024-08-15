@@ -32,15 +32,13 @@
     gap: 15px;
 }
 
-.container > .menu__container > nav > .options__menu > li,
-.container > .menu__container > form > button {
+.container > .menu__container > nav > .options__menu > li{
     cursor: pointer;
-    transition: .3s ease;
+    transition: transform .3s ease;
 }
 
 .container > .menu__container > nav > .options__menu > li:hover {
-    position: relative;
-    bottom: 2.2px;
+    transform: translateY(-3px);
 }
 
 .container > .menu__container > nav > .options__menu > li > a{

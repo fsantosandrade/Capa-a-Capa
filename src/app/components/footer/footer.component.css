@@ -40,13 +40,31 @@
     margin-left: 10px;
 }
 
-.container > .content__container > .contato > ul > li:hover {
+.container > .content__container > .contato > ul > li > a:hover {
     text-decoration: underline;
     cursor: pointer;
+    color: var(--primary-color);
 }
 
 .container > .copyright {
     text-align: center;
     color: grey;
     font-weight: bold;
+}
+
+.contact-link {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+}
+
+.contact-link > a {
+    font-family: Really;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.contact-link > i {
+    font-size: 1.5rem;
 }
