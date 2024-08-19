@@ -32,10 +32,6 @@
     color: var(--secondary-color);
 }
 
-.container > .product__container > .disponivel {
-    margin-bottom: 5px;
-}
-
 .container > .product__container > form > input {
     border: 1px solid black;
     width: 40px;
@@ -61,6 +57,11 @@
     transition: .3s ease;
 }
 
+.container > .product__container > button:disabled {
+    background-color: grey;
+    border: 2px solid grey;
+}
+
 .container > .product__container > button:hover {
     background-color: white;
     color: var(--primary-color);
@@ -70,4 +71,17 @@
     margin: 40px 0;
     text-align: justify;
     text-indent: 15px;
+}
+
+.disponivel, .indisponivel {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.disponivel {
+    color: var(--primary-color);
+}
+
+.indisponivel {
+    color: var(--primary-bg-color);
 }

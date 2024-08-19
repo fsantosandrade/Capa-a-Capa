@@ -1,19 +1,19 @@
 <div class="container">
     <section class="image-prod__container">
-        <img [src]="produto?.imagem" alt="">
+        <img [src]="produto?.imagem" [alt]="produto?.descricao">
     </section>
     <section class="product__container">
         <h1 class="product">{{ produto?.descricao }}</h1>
         <span class="price">{{ produto?.preco | currency: "BRL"}}</span>
-        <span class="disponivel">disponível</span>
+        <span [ngClass]="produto?.emEstoque ? 'disponivel' : 'indisponivel'">{{ produto?.emEstoque ? 'Disponível' : 'Indisponível' }}</span>
 
-        <form action="">
+        <form>
             <label for="qtd">Quantidade:</label>
-            <input type="number" name="qtd" [(ngModel)]="quantidade" min="1"> unidade(s)
+            <input type="number" name="qtd" [(ngModel)]="quantidade" [min]="produto?.emEstoque ? 1 : 0" [max]="produto?.quantidadeEstoque ?? 0"> unidade(s)
         </form>
 
         <span class="estoque">{{ produto?.quantidadeEstoque }} unidade(s) em estoque</span>
-        <button type="button" (click)="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+        <button type="button" (click)="adicionarAoCarrinho()" [disabled]="!produto?.emEstoque">Adicionar ao carrinho</button>
 
         <p class="description">{{ produto?.des }}</p>
     </section>

@@ -12,14 +12,14 @@
                         </span>
                         <label>
                             Quantidade:
-                            <input type="number" name="qtd" [(ngModel)]="item.quantidade" (change)="obterTotal()" min="1">
+                            <input type="number" name="qtd" [(ngModel)]="item.quantidade" (change)="obterTotal()" [min]="item.emEstoque ? 1 : 0" [max]="item.quantidadeEstoque">
                         </label>
                     </div>
                 </div>
                 <button type="button" (click)="removeItem(item.id)"><i class="fa-solid fa-x"></i></button>
             </li>
         </ul>
-        <h2 class="total-carrinho">Total: {{ obterTotal() }}</h2>
+        <h2 class="total-carrinho">Total: {{ obterTotal() | currency: "BRL"}}</h2>
         <button type="button" (click)="comprar()">Comprar</button>
     </div>
 </section>

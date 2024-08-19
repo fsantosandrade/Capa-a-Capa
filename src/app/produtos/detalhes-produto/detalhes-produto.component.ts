@@ -12,7 +12,7 @@ import { ProdutosService } from 'src/app/services/produtos.service';
 })
 export class DetalhesProdutoComponent implements OnInit {
   produto: IProduto | undefined
-  quantidade:number = 1
+  quantidade!: number;
 
   constructor( private produtosService: ProdutosService, private route: ActivatedRoute, private notificacao: NotificacaoService, private carrinho: CarrinhoService ) { }
 
@@ -21,6 +21,7 @@ export class DetalhesProdutoComponent implements OnInit {
     const produtoId = Number(routeParamns.get("id"))
 
     this.produto = this.produtosService.getOne(produtoId)
+    this.quantidade = this.produto?.emEstoque ? 1 : 0
   }
 
   adicionarAoCarrinho() {
